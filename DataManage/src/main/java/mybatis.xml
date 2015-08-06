@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <typeAliases>
+        <typeAlias alias="user" type="com.gdjr.dataInquery.domain.User"/>
+        <typeAlias alias="page" type="com.gdjr.dataInquery.page.Page"/>
+    </typeAliases>
+
+    <!--<plugins>
+        <plugin interceptor="com.yihaomen.util.PagePlugin">
+            <property name="dialect" value="mysql" />
+            <property name="pageSqlId" value=".*ListPage.*" />
+        </plugin>
+    </plugins>
+-->
+    <mappers>
+    <mapper resource="com/gdjr/dataInquery/domain/sqlMappers/user.xml" />
+</mappers>
+</configuration>
+
